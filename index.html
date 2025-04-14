@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src='https://cdn.plot.ly/plotly-3.0.1.min.js'></script>
+    <link rel="stylesheet" href="stilus.css">
+</head>
+<body>
+    <h2>Időjárás előrejelzés</h2>
+    <span>Szélesség(Latitude)</span>
+    <input id="lat" value="47.53333" type="text"><br>
+    <span>Hosszúság(Longitude)</span>
+    <input id="long" value="21.63333" type="text">
+    <button onclick="keres()">Keresés</button>
+
+    <div id="koordinatak"></div>
+
+    <div id="myDivTerkep"></div>
+
+    <h2>Óránkénti hőmérsékletek</h2>
+    <div id='myDiv'><!-- Plotly chart will be drawn inside this DIV --></div>
+
+    <h2>Minimum hőmérsékletek</h2>
+    <div id="minDiv"></div>
+
+    <h2>Maximum hőmérsékletek</h2>
+    <div id="maxDiv"></div>
+
+    <h2>Minimum és maximum hőmérsékletek összehasonlítása</h2>
+    <div id="hasonlitDiv"></div>
+
+    
+
+
+    <div id="tablazat"></div>
+
+    <script src="alap.js"></script>
+</body>
+</html>
